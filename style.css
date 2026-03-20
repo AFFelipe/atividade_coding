@@ -1,4 +1,3 @@
-/* Configurações Gerais */
 * {
   margin: 0;
   padding: 0;
@@ -16,15 +15,15 @@ body {
   padding: 20px;
 }
 
-/* Título */
+
 .title {
-  color: #e3350d; /* Vermelho Pokémon */
+  color: #e3350d;
   font-size: 3rem;
   margin-bottom: 20px;
   text-shadow: 2px 2px 0px #000;
 }
 
-/* Área de Busca */
+
 #Id_pokedex {
   padding: 12px 20px;
   width: 100%;
@@ -34,6 +33,11 @@ body {
   font-size: 1rem;
   outline: none;
   transition: border-color 0.3s;
+
+}
+
+#Id_pokedex:hover{
+  border-color: #e3350d;
 }
 
 #Id_pokedex:focus {
@@ -60,7 +64,7 @@ body {
   transform: scale(0.95);
 }
 
-/* Card do Pokémon (Resultado) */
+
 #pokemon {
   margin-top: 30px;
   background: white;
@@ -86,4 +90,30 @@ body {
 #pokemon p {
   color: #666;
   font-weight: bold;
+}
+
+@media (max-width: 480px) {
+  .title {
+    font-size: 2rem; 
+    text-align: center;
+  }
+
+  #Id_pokedex {
+    max-width: 100%; 
+  }
+
+  .Buscador {
+    width: 100%; 
+    padding: 15px; 
+  }
+
+  #pokemon {
+    min-width: 90%; 
+    margin-top: 20px;
+  }
+
+  #pokemon img {
+    width: 120px;
+    height: 120px;
+  }
 }
